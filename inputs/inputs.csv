@@ -1,0 +1,7 @@
+enable,name,type,number
+0,GeForce_GTX_1660_Ti,gpu,1
+0,GeForce_RTX_4070_Ti,gpu,1
+0,NVIDIA_GEFORCE_1080Ti,gpu,1
+0,NVIDIA_Tesla_K20m,gpu,1
+1,NVIDIA_Tesla_K80,gpu,1
+1,Intel_Xeon_Haswell,cpu,1

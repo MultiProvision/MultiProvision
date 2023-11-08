@@ -1,0 +1,17 @@
+gemver,1
+bicg,1
+lu,1
+3mm,1
+2mm,1
+2DConvolution,1
+gesummv,1
+syr2k,1
+fdtd2d,1
+doitgen,1
+covariance,1
+mvt,1
+atax,1
+correlation,1
+syrk,1
+adi,1
+gemm,1
