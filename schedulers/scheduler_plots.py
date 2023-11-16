@@ -160,7 +160,7 @@ def all_results(export_name, batches):
         aux = aux + df
         list_energy_plot.append(aux)
 
-    list_style = [" ", "////", "OO", "...", "\\\\", "XX", "///", "\\"]
+    list_style = [" ", "////"]
 
     fig, axes = plt.subplots(nrows=2, ncols=1)
     fig.suptitle(f'Hardware: {export_name}', fontsize=16)
@@ -190,11 +190,16 @@ def all_results(export_name, batches):
     for _ in list_energy_plot:
         ax = list_energy_plot[j].plot(kind='bar', title="Energy", ax=axes[1], ylabel="Energy (KJ)", figsize=(10, 10),
                                       edgecolor="black", hatch=list_style[j], width=0.8)
-        j -= 1
+
         ax.get_legend().remove()
         ax.set_ylim([0, max_y_energy])
         current_values = ax.get_yticks()
-        ax.yaxis.set_ticklabels([x / 1000 for x in current_values])
+
+        for i, label in enumerate(ax.get_yticklabels()):
+            label.set_text(str(current_values[i] / 1000))
+
+        j -= 1
+        i += 1
 
     plt.tight_layout()
 
