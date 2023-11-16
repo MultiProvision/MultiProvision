@@ -3,7 +3,7 @@
 A Framework for multi-tenant resource provisioning in CPU-GPU environments.
 
 ## Dependencies
-Before running the TRIPP framework, some packages must be installed, including:
+Before running the MultiProvision framework, some packages must be installed, including:
 - Pandas
 - Matplotlib
 
